@@ -4,7 +4,7 @@ import jakarta.transaction.Transactional
 import org.springframework.context.ApplicationEventPublisher
 import org.springframework.modulith.events.ApplicationModuleListener
 import org.springframework.stereotype.Component
-import trile.coffeeshop.brewing.BrewingResultCommand
+import trile.coffeeshop.brewing.command.BrewingResultCommand
 import trile.coffeeshop.common.Log
 import trile.coffeeshop.order.OrderStatus
 

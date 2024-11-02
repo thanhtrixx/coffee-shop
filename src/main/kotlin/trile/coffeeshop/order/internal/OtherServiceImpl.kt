@@ -4,7 +4,7 @@ import jakarta.transaction.Transactional
 import org.springframework.context.ApplicationEventPublisher
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
-import trile.coffeeshop.order.BrewingCommand
+import trile.coffeeshop.order.command.BrewingCommand
 import trile.coffeeshop.common.Log
 import trile.coffeeshop.common.exception.InvalidParamException
 import trile.coffeeshop.order.CreateOrderRequest

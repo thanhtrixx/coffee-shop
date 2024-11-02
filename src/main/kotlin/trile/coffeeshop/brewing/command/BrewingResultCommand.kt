@@ -1,4 +1,4 @@
-package trile.coffeeshop.brewing
+package trile.coffeeshop.brewing.command
 
 import java.time.LocalDateTime
 
