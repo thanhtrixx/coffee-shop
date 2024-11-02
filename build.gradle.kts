@@ -1,9 +1,9 @@
 plugins {
-  kotlin("jvm") version "2.0.0"
-  kotlin("plugin.spring") version "2.0.0"
+  kotlin("jvm") version "1.9.25"
+  kotlin("plugin.spring") version "1.9.25"
   id("org.springframework.boot") version "3.3.5"
   id("io.spring.dependency-management") version "1.1.6"
-  kotlin("plugin.jpa") version "2.0.0"
+  kotlin("plugin.jpa") version "1.9.25"
 }
 
 group = "trile"
@@ -25,7 +25,7 @@ repositories {
   mavenCentral()
 }
 
-extra["springModulithVersion"] = "1.2.4"
+extra["springModulithVersion"] = "1.2.5"
 
 configurations.forEach { it.exclude(group = "org.springframework.boot", module = "spring-boot-starter-logging") }
 
@@ -56,6 +56,7 @@ dependencies {
   testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
   testImplementation("org.springframework.modulith:spring-modulith-starter-test")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+  testRuntimeOnly("com.h2database:h2")
 }
 
 dependencyManagement {
