@@ -44,11 +44,14 @@ dependencies {
 
 //  implementation("dev.krud:shapeshift:0.8.0")
 
-  compileOnly("org.projectlombok:lombok")
-  runtimeOnly("com.mysql:mysql-connector-j")
+//  compileOnly("org.projectlombok:lombok")
+//  annotationProcessor("org.projectlombok:lombok")
+
+//  runtimeOnly("com.mysql:mysql-connector-j")
+  runtimeOnly("com.h2database:h2")
   runtimeOnly("org.springframework.modulith:spring-modulith-actuator")
   runtimeOnly("org.springframework.modulith:spring-modulith-observability")
-  annotationProcessor("org.projectlombok:lombok")
+
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
   testImplementation("org.springframework.modulith:spring-modulith-starter-test")
