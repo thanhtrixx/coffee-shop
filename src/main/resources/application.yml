@@ -1,0 +1,15 @@
+spring:
+  application.name: coffeeshop
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: on
+    openInView: false
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/coffeeshop-db
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
